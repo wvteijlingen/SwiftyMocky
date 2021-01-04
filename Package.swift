@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "swiftymocky",
+    platforms: [
+        .iOS(.v8)
+    ],
     products: [
         .library(name: "SwiftyMocky", targets: ["SwiftyMocky"]),
         .library(name: "SwiftyPrototype", targets: ["SwiftyPrototype"]),
